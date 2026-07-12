@@ -3,9 +3,20 @@
 > *Your career didn't pause. It took a different path.*
 
 AI-powered workforce re-entry platform for women. 
-Upload your resume → get a personalized skill decay analysis, weekly action plan, RAG-matched re-entry stories, and peer matching — all in under 30 seconds.
+```mermaid
+flowchart LR
+    A[Upload Resume] --> B[ AI Analysis]
+    B --> C[Skill Decay Analysis]
+    B --> D[Weekly Action Plan]
+    B --> E[RAG-Matched Re-entry Stories]
+    B --> F[Peer Matching]
 
-**P.S. This project won first place at Hackfinity,2026**  
+    C --> G[Ready in Under 30 Seconds]
+    D --> G
+    E --> G
+    F --> G
+```
+**P.S. This project won first place at Hackfinity,2026 :)**  
 **[Video Demo](https://drive.google.com/file/d/1mFyYjCvtBahEjVKPVr5R0nscKxHRZ3Fg/view?usp=sharing)**
 
 ---
