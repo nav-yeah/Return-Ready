@@ -18,14 +18,18 @@ flowchart LR
 ```
 **P.S. This project won first place at Hackfinity,2026 :)**  
 **[Video Demo](https://drive.google.com/file/d/1mFyYjCvtBahEjVKPVr5R0nscKxHRZ3Fg/view?usp=sharing)**
-
+**[Sample Resume for Testing](https://drive.google.com/file/d/1l5eFjdf34IKI-sTucVblIQHD2sqoPIxJ/view?usp=sharing)**
 ---
 
 ## How It Works
 
-**Mirror** — D3 skills constellation showing decay-scored skills from your resume  
-**Move** — Claude-generated weekly micro-actions + RAG-matched re-entry story  
-**Witness** — Silent peer matching via pgvector cosine similarity  
+**1. Upload your resume** — Claude API parses your PDF and extracts skills, proficiency levels, years of experience, and last-used dates. No manual entry.
+
+**Mirror** — Each skill is scored using an exponential decay model (score = base × e^(-λ × months)). A D3.js force-directed constellation visualizes your skill landscape — node size = current strength, opacity = decay level. Hover to inspect any skill.
+
+**Move** — Claude analyzes your decayed profile against your target role and generates 3 personalized weekly micro-actions with resource links. A re-entry story is retrieved via RAG — your skill embedding vector is matched against a curated corpus of 15 stories using pgvector cosine similarity. Week difficulty scales with your gap duration.
+
+**Witness** — Your skill profile is stored as a 384-dimensional fastembed vector. pgvector finds the 3 most similar returners in the database by cosine similarity. You see peers anonymously — no pressure to connect, just proof you're not alone.
 
 ---
 
