@@ -18,19 +18,32 @@ flowchart LR
 ```
 **P.S. This project won first place at Hackfinity,2026 :)**  
 **[Video Demo](https://drive.google.com/file/d/1mFyYjCvtBahEjVKPVr5R0nscKxHRZ3Fg/view?usp=sharing)**
+
 **[Sample Resume for Testing](https://drive.google.com/file/d/1l5eFjdf34IKI-sTucVblIQHD2sqoPIxJ/view?usp=sharing)**
 
 ---
 
 ## How It Works
 
-**1. Upload your resume** — Claude API parses your PDF and extracts skills, proficiency levels, years of experience, and last-used dates. No manual entry.
+```mermaid
+flowchart TD
+    A[Upload Resume]
+    A --> B[Claude API<br/>Extracts skills, proficiency,<br/>experience & last-used dates]
 
-**Mirror** — Each skill is scored using an exponential decay model (score = base × e^(-λ × months)). A D3.js force-directed constellation visualizes your skill landscape — node size = current strength, opacity = decay level. Hover to inspect any skill.
+    B --> C["Mirror"]
+    C --> C1["Exponential Skill Decay Analysis"]
+    C1 --> C2["D3.js Skill Constellation<br/>Node Size = Skill Strength<br/>Opacity = Skill Decay"]
 
-**Move** — Claude analyzes your decayed profile against your target role and generates 3 personalized weekly micro-actions with resource links. A re-entry story is retrieved via RAG — your skill embedding vector is matched against a curated corpus of 15 stories using pgvector cosine similarity. Week difficulty scales with your gap duration.
+    C2 --> D["Move"]
+    D --> D1["Claude Generates<br/>3 Personalized Weekly Actions"]
+    D1 --> D2["RAG Retrieves<br/>Most Relevant Re-entry Story"]
+    D2 --> D3["Difficulty Adjusted<br/>to Career Gap Duration"]
 
-**Witness** — Your skill profile is stored as a 384-dimensional fastembed vector. pgvector finds the 3 most similar returners in the database by cosine similarity. You see peers anonymously — no pressure to connect, just proof you're not alone.
+    D3 --> E["Witness"]
+    E --> E1["FastEmbed<br/>384-D Skill Embedding"]
+    E1 --> E2["pgvector Cosine Similarity Search"]
+    E2 --> E3["Anonymous Peer Matching<br/>Top 3 Similar Returners"]
+```
 
 ---
 
