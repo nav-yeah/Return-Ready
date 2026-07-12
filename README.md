@@ -1,10 +1,11 @@
-# ReturnReady 
+# Return Ready 
 
 > *Your career didn't pause. It took a different path.*
 
-AI-powered workforce re-entry platform for women. Upload your resume → get a personalized skill decay analysis, weekly action plan, RAG-matched re-entry stories, and peer matching — all in under 30 seconds.
+AI-powered workforce re-entry platform for women. 
+Upload your resume → get a personalized skill decay analysis, weekly action plan, RAG-matched re-entry stories, and peer matching — all in under 30 seconds.
 
-**First Place — Hackfinity,2026**  
+**P.S. This project won first place at Hackfinity,2026**  
 **[Video Demo](https://drive.google.com/file/d/1mFyYjCvtBahEjVKPVr5R0nscKxHRZ3Fg/view?usp=sharing)**
 
 ---
