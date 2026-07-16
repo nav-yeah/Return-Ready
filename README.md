@@ -87,7 +87,7 @@ npm install && npm run dev
 
 - Supabase free tier pauses after 7 days of inactivity
 - Decay rates are research-informed heuristics, not empirically calibrated
-- Peer matching requires seeded users — sparse on a fresh database
+- Peer matching requires seeded users which are sparse on a fresh database
 - RAG corpus is 15 stories which is sufficient for demo, not production
 - Target role is free text leading to inconsistent phrasing affects gap analysis
 
